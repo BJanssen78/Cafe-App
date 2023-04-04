@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
+* {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+* h1 {
+  font-size: 3em;
+  margin: 10px;
+}
+* h2 {
+  font-size: 1.5em;
+  margin: 5px;
+}
+* h3 h4 h5 {
+  font-size: 1em;
+}
+
+.header {
+  background-color: rgba(132, 0, 0, 0.822);
+  padding: 25px;
+  font-size: 5em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header .Main-Title {
+  color: white;
+}
+
+.button {
+  background-color: rgba(179, 110, 20, 0.836);
+  color: white;
+  width: 15vw;
+  font-size: 1.3em;
+  padding: 5px;
+  margin: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  border-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.8);
+}
+.button:hover {
+  background-color: rgba(179, 110, 20, 0.954);
+  border-color: black;
+  box-shadow: 2px 2px 2px rgb(115, 115, 115);
+}
+
+.drink-img {
+  width: 6vw;
+  max-height: 100px;
+}/*# sourceMappingURL=site.css.map */

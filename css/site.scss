@@ -1,0 +1,40 @@
+@import "./_variables";
+@import "./_mixins";
+
+* {
+  font-family: $font;
+  color: $main-font-clr;
+  text-align: center;
+  margin: 0 auto;
+  h1 {
+    font-size: $font-H1;
+    margin: 10px;
+  }
+  h2 {
+    font-size: $font-H2;
+    margin: 5px;
+  }
+
+  h3 h4 h5 {
+    font-size: 1em;
+  }
+}
+.header {
+  background-color: $header-bg-clr;
+  padding: 25px;
+  @include header-font-properties;
+}
+
+.button {
+  @include Button-properties;
+
+  &:hover {
+    background-color: $btn-bg-clr-hvr;
+    border-color: $main-font-clr;
+    box-shadow: 2px 2px 2px $btn-sh-clr-hvr;
+  }
+}
+.drink-img {
+  width: 6vw;
+  max-height: 100px;
+}
