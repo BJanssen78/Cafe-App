@@ -5,7 +5,7 @@ export const Buttons = ({ drinks, title, orderDrink }) => {
         <h2>{title}</h2>
         {drinks.map((Item) => (
           <button
-            onClick={() => orderDrink(drinks.id)}
+            onClick={() => orderDrink(Item.id)}
             className="button"
             id={Item.id}
             key={Item.id}
