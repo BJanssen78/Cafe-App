@@ -2,14 +2,15 @@ export const AvailableDrinks = [
   {
     id: "1",
     name: "Coffee",
-    imgURL: "https://media.wincacademy.nl/coffee.jpeg",
+    imgURL: "https://www.pngmart.com/files/21/Coffee-PNG-HD.png",
     alt: "coffee",
     catergory: "hot",
   },
   {
     id: "2",
     name: "Tea",
-    imgURL: "https://media.wincacademy.nl/tea.jpeg",
+    imgURL:
+      "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/4205/cup-of-tea-clipart-xl.png",
     alt: "tea",
     catergory: "hot",
   },
@@ -17,7 +18,7 @@ export const AvailableDrinks = [
     id: "3",
     name: "Cola",
     imgURL:
-      "https://files.horecasupply.nl/1423655244-Coca+Colaglas+frisdrankglas+klein.jpg",
+      "https://cdn.freebiesupply.com/logos/large/2x/coca-cola-logo-black-and-white.png",
     alt: "cola",
     catergory: "fris",
   },
@@ -55,14 +56,15 @@ export const AvailableDrinks = [
     id: "8",
     name: "Rode Wijn",
     imgURL:
-      "https://cdn.webshopapp.com/shops/39758/files/107321759/900x900x2/arcoroc-wijnglazen-30cl-48-stuks.jpg",
+      "https://w7.pngwing.com/pngs/531/875/png-transparent-white-wine-red-wine-merlot-distilled-beverage-white-wine-glass-wine-glass-wine-thumbnail.png",
     alt: "rode wijn",
     catergory: "alcoholic",
   },
   {
     id: "9",
     name: "Witte Wijn",
-    imgURL: "https://media.s-bol.com/v5Q35AlDMZzV/Lrz8pg/306x840.jpg",
+    imgURL:
+      "https://w7.pngwing.com/pngs/531/875/png-transparent-white-wine-red-wine-merlot-distilled-beverage-white-wine-glass-wine-glass-wine-thumbnail.png",
     alt: "witte wijn",
     catergory: "alcoholic",
   },

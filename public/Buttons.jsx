@@ -1,8 +1,9 @@
-export const Buttons = ({ drinks, title, orderDrink }) => {
+import { DrinkImg } from "./DrinkImg";
+
+export const Buttons = ({ drinks, orderDrink }) => {
   return (
     <>
       <div className="btn-container">
-        <h2>{title}</h2>
         {drinks.map((Item) => (
           <button
             onClick={() => orderDrink(Item.id)}
@@ -12,6 +13,13 @@ export const Buttons = ({ drinks, title, orderDrink }) => {
             value={Item.name}
           >
             {Item.name}
+            <img
+              id={Item.id}
+              src={Item.imgURL}
+              alt={Item.alt}
+              className="drink-img"
+              key={Item.id}
+            />
           </button>
         ))}
       </div>

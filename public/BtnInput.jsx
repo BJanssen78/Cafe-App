@@ -22,40 +22,22 @@ export const BtnInput = () => {
         drinks={OrderDrinks.filter(
           (DrinkCatergory) => DrinkCatergory.catergory === "hot"
         )}
-        title="Hot drinks"
         orderDrink={orderDrink}
-      />
-      <DrinkImg
-        drinks={OrderDrinks.filter(
-          (DrinkCatergory) => DrinkCatergory.catergory === "hot"
-        )}
       />
       <Buttons
         drinks={OrderDrinks.filter(
           (DrinkCatergory) => DrinkCatergory.catergory === "fris"
         )}
-        title="Fris dranken"
         orderDrink={orderDrink}
-      />
-      <DrinkImg
-        drinks={OrderDrinks.filter(
-          (DrinkCatergory) => DrinkCatergory.catergory === "fris"
-        )}
       />
       <Buttons
         drinks={OrderDrinks.filter(
           (DrinkCatergory) => DrinkCatergory.catergory === "alcoholic"
         )}
-        title="Alcoholic drinks"
         orderDrink={orderDrink}
-      />
-      <DrinkImg
-        drinks={OrderDrinks.filter(
-          (DrinkCatergory) => DrinkCatergory.catergory === "alcoholic"
-        )}
       />
       <p>Your choice :</p>
-      <p>{UserChoice.name}</p>
+      <p>{UserChoice[0].name}</p>
       {/* {orderedDrink2 ? null : <h1>{greeting}</h1>} */}
       {/* <p>{UserChoice ? null : orderedDrink2}</p> */}
       {/* <p>{UserChoice ? orderedDrink2 : null}</p> */}
