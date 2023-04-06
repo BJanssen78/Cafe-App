@@ -30,10 +30,17 @@
   color: white;
 }
 
-.button {
+.btn-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn-container .button {
   background-color: rgba(179, 110, 20, 0.836);
   color: white;
-  width: 15vw;
+  width: 10em;
   font-size: 1.3em;
   padding: 5px;
   margin: 10px;
@@ -43,7 +50,7 @@
   border-radius: 15px;
   box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.8);
 }
-.button:hover {
+.btn-container .button:hover {
   background-color: rgba(179, 110, 20, 0.954);
   border-color: black;
   box-shadow: 2px 2px 2px rgb(115, 115, 115);

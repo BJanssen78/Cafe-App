@@ -24,16 +24,23 @@
   padding: 25px;
   @include header-font-properties;
 }
+.btn-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  .button {
+    @include Button-properties;
 
-.button {
-  @include Button-properties;
-
-  &:hover {
-    background-color: $btn-bg-clr-hvr;
-    border-color: $main-font-clr;
-    box-shadow: 2px 2px 2px $btn-sh-clr-hvr;
+    &:hover {
+      background-color: $btn-bg-clr-hvr;
+      border-color: $main-font-clr;
+      box-shadow: 2px 2px 2px $btn-sh-clr-hvr;
+    }
   }
 }
+
 .drink-img {
   width: 4vw;
   max-height: 100px;

@@ -12,7 +12,8 @@
 @mixin Button-properties {
   background-color: $btn-bg-clr;
   color: $highlight-clr;
-  width: 15vw;
+  width: 10em;
+  // height: 15vh;
   font-size: $font-size-btn;
   padding: 5px;
   margin: 10px;

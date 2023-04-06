@@ -1,5 +1,3 @@
-import { DrinkImg } from "./DrinkImg";
-
 export const Buttons = ({ drinks, orderDrink }) => {
   return (
     <>
@@ -12,7 +10,7 @@ export const Buttons = ({ drinks, orderDrink }) => {
             key={Item.id}
             value={Item.name}
           >
-            {Item.name}
+            <p>{Item.name}</p>
             <img
               id={Item.id}
               src={Item.imgURL}
