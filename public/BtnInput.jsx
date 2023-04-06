@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export const BtnInput = () => {
   const [OrderDrinks, setOrderedDrink] = useState(AvailableDrinks);
-  const [UserChoice, setUserChoice] = useState(AvailableDrinks);
+  const [UserChoice, setUserChoice] = useState();
   const greeting = "Welcome to our cafe!";
 
   const orderDrink = (id) => {
@@ -36,8 +36,11 @@ export const BtnInput = () => {
         )}
         orderDrink={orderDrink}
       />
-      <p>Your choice :</p>
-      <p>{UserChoice[0].name}</p>
+      <p>
+        {UserChoice[0]
+          ? "Your choice : " + UserChoice[0].name
+          : "Make your choice"}
+      </p>
       {/* {orderedDrink2 ? null : <h1>{greeting}</h1>} */}
       {/* <p>{UserChoice ? null : orderedDrink2}</p> */}
       {/* <p>{UserChoice ? orderedDrink2 : null}</p> */}
