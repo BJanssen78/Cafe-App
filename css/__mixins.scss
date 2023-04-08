@@ -1,7 +1,6 @@
 @mixin header-font-properties {
   font-size: $font-size-header;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px;
+
   text-transform: uppercase;
   text-decoration: none;
   .Main-Title {
@@ -22,4 +21,20 @@
   border-color: $highlight-clr;
   border-radius: 15px;
   box-shadow: 2px 2px 2px $btn-sh-clr;
+}
+
+@mixin DateClock {
+  color: $highlight-clr;
+  position: right;
+  float: right;
+  font-size: 1.5rem;
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
 }

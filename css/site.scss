@@ -23,6 +23,10 @@
   background-color: $header-bg-clr;
   padding: 25px;
   @include header-font-properties;
+  .header-title-link {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+  }
 }
 .btn-container {
   display: flex;
@@ -44,4 +48,11 @@
 .drink-img {
   width: 4vw;
   max-height: 100px;
+}
+.date-clock {
+  @include DateClock;
+  p {
+    color: white;
+    font-weight: 100;
+  }
 }

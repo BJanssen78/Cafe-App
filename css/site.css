@@ -21,13 +21,15 @@
   background-color: rgba(132, 0, 0, 0.822);
   padding: 25px;
   font-size: 5em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px;
   text-transform: uppercase;
   text-decoration: none;
 }
 .header .Main-Title {
   color: white;
+}
+.header .header-title-link {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
 }
 
 .btn-container {
@@ -59,4 +61,23 @@
 .drink-img {
   width: 4vw;
   max-height: 100px;
+}
+
+.date-clock {
+  color: white;
+  position: right;
+  float: right;
+  font-size: 1.5rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+.date-clock p {
+  color: white;
+  font-weight: 100;
 }/*# sourceMappingURL=site.css.map */
