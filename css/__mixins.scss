@@ -38,3 +38,34 @@
   align-content: flex-end;
   flex-wrap: wrap;
 }
+@mixin AgeVerification {
+  gap: 5px;
+  flex-wrap: nowrap;
+  margin: 5px auto;
+  padding: 5px;
+  input {
+    padding: 2px;
+    margin: 5px;
+    font-size: 1.2em;
+    &:valid {
+      border: 1px solid greenyellow;
+    }
+    &:not(:focus):not(:placeholder-shown):invalid {
+      border: 1px solid red;
+    }
+  }
+  label {
+    padding: 2px;
+    margin: 5px;
+  }
+  .submitBtn {
+    width: 200px;
+    padding: 2px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: 1px solid black;
+    &:hover {
+      background-color: rgba($color: #e7e7e7, $alpha: 1);
+    }
+  }
+}

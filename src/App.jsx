@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BtnInput } from "../public/BtnInput";
 import { Header } from "../public/Header";
+import { AgeVerification } from "../public/AgeVerification";
 
 const greeting = "Welcome to our cafe";
 
@@ -18,7 +19,7 @@ function App() {
           <BtnInput />
         </>
       )}
-      {/* <BtnInput /> */}
+      <AgeVerification />
     </div>
   );
 }

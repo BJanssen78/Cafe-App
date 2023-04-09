@@ -80,4 +80,39 @@
 .date-clock p {
   color: white;
   font-weight: 100;
+}
+
+.AgeVerification {
+  gap: 5px;
+  flex-wrap: nowrap;
+  margin: 5px auto;
+  padding: 5px;
+}
+.AgeVerification input {
+  padding: 2px;
+  margin: 5px;
+  font-size: 1.2em;
+}
+.AgeVerification input:valid {
+  border: 1px solid greenyellow;
+}
+.AgeVerification input:not(:focus):not(:-moz-placeholder-shown):invalid {
+  border: 1px solid red;
+}
+.AgeVerification input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+.AgeVerification label {
+  padding: 2px;
+  margin: 5px;
+}
+.AgeVerification .submitBtn {
+  width: 200px;
+  padding: 2px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.AgeVerification .submitBtn:hover {
+  background-color: #e7e7e7;
 }/*# sourceMappingURL=site.css.map */
