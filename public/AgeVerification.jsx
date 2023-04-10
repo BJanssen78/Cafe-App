@@ -6,17 +6,17 @@ export const AgeVerification = () => {
     const dateOfBirth = bDay + "-" + bMonth + "-" + bYear;
     console.log(dateOfBirth);
 
-    if ((bDay, bMonth, bYear !== null)) {
-      //functie
-      if (bDay >= 1 && <= 31) {
-        console.log("Day is between 1 and 31");
-      } else {
-        console.log("Day is invalid");
-      }
-    } else {
-      //message all fields must be filled in
-      console.log("fields are empty");
-    }
+    // if ((bDay, bMonth, bYear !== null)) {
+    //   //functie
+    //   if (bDay >= 1 && <= 31) {
+    //     console.log("Day is between 1 and 31");
+    //   } else {
+    //     console.log("Day is invalid");
+    //   }
+    // } else {
+    //   //message all fields must be filled in
+    //   console.log("fields are empty");
+    // }
   };
 
   return (
