@@ -89,11 +89,20 @@
   padding: 5px;
 }
 .AgeVerification input {
-  padding: 2px;
+  padding: 5px;
   margin: 5px;
   font-size: 1.2em;
+  width: 10vw;
+  overflow: hidden;
 }
-.AgeVerification input:valid {
+.AgeVerification input::-webkit-inner-spin-button,
+.AgeVerification input ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.AgeVerification input:not(:focus):not(:-moz-placeholder-shown):valid {
+  border: 1px solid greenyellow;
+}
+.AgeVerification input:not(:focus):not(:placeholder-shown):valid {
   border: 1px solid greenyellow;
 }
 .AgeVerification input:not(:focus):not(:-moz-placeholder-shown):invalid {

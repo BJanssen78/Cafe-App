@@ -6,17 +6,17 @@ export const AgeVerification = () => {
     const dateOfBirth = bDay + "-" + bMonth + "-" + bYear;
     console.log(dateOfBirth);
 
-    // if ((bDay, bMonth, bYear !== null)) {
-    //   //functie
-    //   if (bDay >= 1 && <= 31) {
-    //     console.log("Day is between 1 and 31");
-    //   } else {
-    //     console.log("Day is invalid");
-    //   }
-    // } else {
-    //   //message all fields must be filled in
-    //   console.log("fields are empty");
-    // }
+    if (bDay !== null && bMonth !== null && bYear !== null) {
+      //functie
+      if (bDay >= 1 && bDay <= 31) {
+        console.log("Day is between 1 and 31");
+      } else {
+        console.log("Day is invalid");
+      }
+    } else {
+      //message all fields must be filled in
+      console.log("fields are empty");
+    }
   };
 
   return (
@@ -25,29 +25,36 @@ export const AgeVerification = () => {
         <h2>Age Verification</h2>
         <p>Enter your date of birth</p>
         <input
-          type="text"
+          type="number"
           id="bDay"
           name="bDay"
-          placeholder="Day"
+          min={1}
+          max={31}
+          placeholder="Day (DD)"
           required
           maxLength="2"
           pattern="[0-9]"
         />
         <input
-          type="text"
+          type="number"
           id="bMonth"
           name="bMonth"
-          placeholder="Month"
+          min={1}
+          max={12}
+          placeholder="Month (MM)"
           required
           maxLength="2"
           pattern="[0-9]"
         />
         <input
-          type="text"
+          type="number"
+          min={0}
+          max={0}
           id="bYear"
           name="bYear"
-          placeholder="Year"
+          placeholder="Year (YYYY)"
           required
+          minLength="4"
           maxLength="4"
           pattern="[0-9]"
         />
