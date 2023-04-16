@@ -124,4 +124,12 @@
 }
 .AgeVerification .submitBtn:hover {
   background-color: #e7e7e7;
+}
+
+.search-drink {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2em;
+  width: 25vw;
+  border-radius: 25px;
 }/*# sourceMappingURL=site.css.map */

@@ -76,3 +76,11 @@
     }
   }
 }
+
+@mixin search-drink {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2em;
+  width: 25vw;
+  border-radius: 25px;
+}

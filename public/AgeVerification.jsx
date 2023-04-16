@@ -16,7 +16,14 @@ export const AgeVerification = () => {
 
     console.log(dateOfBirth);
 
-    if (bDay !== null && bMonth !== null && bYear !== null) {
+    if (
+      bDay !== null &&
+      bDay !== "" &&
+      bMonth !== null &&
+      bMonth !== "" &&
+      bYear !== null &&
+      bYear !== ""
+    ) {
       //functie
       if (
         bDay >= 1 &&
@@ -45,11 +52,11 @@ export const AgeVerification = () => {
         }
         // console.log("Your age is ", y, m, d);
       } else {
-        console.log("Day or Month is invalid");
+        console.log("Date is invalid");
       }
     } else {
       //message all fields must be filled in
-      console.log("fields are empty");
+      console.log("all fields must be filled in");
     }
   };
 
