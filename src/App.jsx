@@ -24,7 +24,9 @@ function App() {
       <Header />
       {<h2>{greeting}</h2>}
       <AgeVerification />
-      <SearchDrink drinks={AvailableDrinks} updateList={searchdrinks} />
+
+      <SearchDrink drinks={AvailableDrinks} searchdrinks={searchdrinks} />
+
       {selectDrink ? (
         "Your selected drink is "
       ) : (

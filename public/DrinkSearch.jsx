@@ -1,4 +1,6 @@
 export const SearchDrink = (drinks, searchdrinks) => {
+  console.log(drinks);
+  console.log(searchdrinks);
   return (
     <>
       <input
