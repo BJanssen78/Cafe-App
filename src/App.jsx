@@ -16,7 +16,6 @@ function App() {
       (drink) => drink.name == drinkName
     );
     setSelectDrink(updateList);
-    // update state.
   };
 
   return (
@@ -26,7 +25,6 @@ function App() {
       <AgeVerification />
 
       <SearchDrink drinks={AvailableDrinks} searchdrinks={searchdrinks} />
-
       {selectDrink ? (
         "Your selected drink is "
       ) : (

@@ -115,16 +115,6 @@
   padding: 2px;
   margin: 5px;
 }
-.AgeVerification .submitBtn {
-  width: 200px;
-  padding: 2px;
-  font-size: 1.2em;
-  border-radius: 25px;
-  border: 1px solid black;
-}
-.AgeVerification .submitBtn:hover {
-  background-color: #e7e7e7;
-}
 
 .search-drink {
   padding: 5px;
@@ -132,4 +122,15 @@
   font-size: 1.2em;
   width: 25vw;
   border-radius: 25px;
+}
+
+.submitBtn {
+  width: 200px;
+  padding: 2px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.submitBtn:hover {
+  background-color: #e7e7e7;
 }/*# sourceMappingURL=site.css.map */

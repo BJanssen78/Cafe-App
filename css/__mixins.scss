@@ -65,16 +65,6 @@
     padding: 2px;
     margin: 5px;
   }
-  .submitBtn {
-    width: 200px;
-    padding: 2px;
-    font-size: 1.2em;
-    border-radius: 25px;
-    border: 1px solid black;
-    &:hover {
-      background-color: rgba($color: #e7e7e7, $alpha: 1);
-    }
-  }
 }
 
 @mixin search-drink {
