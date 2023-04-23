@@ -1,13 +1,9 @@
 import { useState } from "react";
 
-export const SearchDrink = (drinks, searchdrinks) => {
-  console.log(drinks);
+export const SearchDrink = ({ drinks, searchdrinks }) => {
+  // console.log(drinks);
   const [userText, setUserText] = useState();
 
-  const search = (drink) => {
-    console.log(drink);
-    setUserText(drink);
-  };
   return (
     <>
       <div>
@@ -30,7 +26,6 @@ export const SearchDrink = (drinks, searchdrinks) => {
             Search
           </button>
         </p>
-        <p>{userText}</p>
       </div>
     </>
   );

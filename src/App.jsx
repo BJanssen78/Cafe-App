@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BtnInput } from "../public/BtnInput";
 import { Header } from "../public/Header";
 import { AgeVerification } from "../public/AgeVerification";
@@ -16,6 +16,20 @@ function App() {
       (drink) => drink.name == drinkName
     );
     setSelectDrink(updateList);
+    // console.log(selectDrink);
+    // console.log(updateList);
+  };
+
+  useEffect(() => {
+    console.log("Use effect " + selectDrink);
+  });
+  const [OrderDrinks, setOrderedDrink] = useState(AvailableDrinks);
+  const [UserChoice, setUserChoice] = useState();
+
+  const orderDrink = (id) => {
+    const orderedDrink = AvailableDrinks.filter((drink) => drink.id === id);
+    setOrderedDrink(orderedDrink);
+    setUserChoice(orderedDrink);
   };
 
   return (
@@ -30,7 +44,7 @@ function App() {
       ) : (
         <>
           <p>Choose a drink from our menu</p>
-          <BtnInput />
+          <BtnInput drinks={AvailableDrinks} order={orderDrink} />
         </>
       )}
     </div>
