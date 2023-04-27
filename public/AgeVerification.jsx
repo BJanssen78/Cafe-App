@@ -1,6 +1,6 @@
-export const AgeVerification = () => {
+export const AgeVerification = ({ age }) => {
   const currentDate = new Date();
-  const minYear = currentDate.getFullYear() - 18;
+  const minYear = currentDate.getFullYear() - 10;
   const maxYear = currentDate.getFullYear() - 100;
   let currentDay = currentDate.getDate();
   let currentMonth = currentDate.getMonth() + 1;
@@ -14,8 +14,6 @@ export const AgeVerification = () => {
     const bYear = document.getElementById("bYear").value;
     const dateOfBirth = bDay + "-" + bMonth + "-" + bYear;
 
-    console.log(dateOfBirth);
-
     if (
       bDay !== null &&
       bDay !== "" &&
@@ -24,7 +22,6 @@ export const AgeVerification = () => {
       bYear !== null &&
       bYear !== ""
     ) {
-      //functie
       if (
         bDay >= 1 &&
         bDay <= 31 &&
@@ -46,13 +43,15 @@ export const AgeVerification = () => {
         const userAge = currertYear - bYear;
 
         if (userAge >= minAge) {
-          console.log("Access granted");
+          age(userAge);
+          // console.log("Access granted " + userAge);
         } else {
-          console.log("Access denied");
+          age(userAge);
+          // console.log("Access denied " + userAge);
         }
         // console.log("Your age is ", y, m, d);
       } else {
-        console.log("Date is invalid");
+        console.log("Date is invalid, check your entry");
       }
     } else {
       //message all fields must be filled in

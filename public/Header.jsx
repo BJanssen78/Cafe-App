@@ -13,9 +13,8 @@ export const Header = () => {
           <span className="Main-Title">Brown Cafe</span>
         </a>
         <span className="date-clock">
-          <p>
-            <CurrentDate />
-          </p>
+          <CurrentDate />
+
           <p>
             <LiveClockUpdate />
           </p>

@@ -10,43 +10,49 @@ const greeting = "Welcome to our cafe";
 function App() {
   const [selectDrink, setSelectDrink] = useState();
   const [userAge, setUserAge] = useState();
+  const [userAgeMsg, setUserAgeMsg] = useState();
 
-  const searchdrinks = (drinkName) => {
-    const updateList = AvailableDrinks.filter(
-      (drink) => drink.name == drinkName
-    );
-    setSelectDrink(updateList);
-    // console.log(selectDrink);
-    // console.log(updateList);
+  const verifyUserAge = (age) => {
+    setUserAge(age);
+
+    if (userAge >= 18) {
+      setUserAgeMsg("Access granted");
+    } else {
+      setUserAgeMsg("Access denied, you are not old enough");
+    }
   };
 
-  useEffect(() => {
-    console.log("Use effect " + selectDrink);
-  });
-  const [OrderDrinks, setOrderedDrink] = useState(AvailableDrinks);
-  const [UserChoice, setUserChoice] = useState();
+  const searchdrinks = (drinkName) => {
+    const updateList = AvailableDrinks.filter((drink) =>
+      drink.name.includes(drinkName)
+    );
+    setSelectDrink(updateList);
+  };
 
   const orderDrink = (id) => {
     const orderedDrink = AvailableDrinks.filter((drink) => drink.id === id);
-    setOrderedDrink(orderedDrink);
-    setUserChoice(orderedDrink);
+    setSelectDrink(orderedDrink);
+    console.log("Your selected drink is " + selectDrink);
   };
 
   return (
     <div className="App">
-      <Header />
-      {<h2>{greeting}</h2>}
-      <AgeVerification />
+      <>
+        <Header />
+        {<h2>{greeting}</h2>}
+        <AgeVerification age={verifyUserAge} />
+        <p>{userAgeMsg}</p>
 
-      <SearchDrink drinks={AvailableDrinks} searchdrinks={searchdrinks} />
-      {selectDrink ? (
-        "Your selected drink is "
-      ) : (
-        <>
-          <p>Choose a drink from our menu</p>
-          <BtnInput drinks={AvailableDrinks} order={orderDrink} />
-        </>
-      )}
+        <SearchDrink drinks={AvailableDrinks} searchdrinks={searchdrinks} />
+        {selectDrink ? (
+          <BtnInput drinks={selectDrink} order={orderDrink} />
+        ) : (
+          <>
+            <p>Choose a drink from our menu</p>
+            <BtnInput drinks={AvailableDrinks} order={orderDrink} />
+          </>
+        )}
+      </>
     </div>
   );
 }
