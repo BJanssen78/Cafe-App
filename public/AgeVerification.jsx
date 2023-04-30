@@ -70,7 +70,7 @@ export const AgeVerification = ({ age }) => {
           name="bDay"
           min={1}
           max={31}
-          placeholder="Day (DD)"
+          placeholder="DD"
           required
           maxLength="2"
           pattern="[0-9]"
@@ -81,7 +81,7 @@ export const AgeVerification = ({ age }) => {
           name="bMonth"
           min={1}
           max={12}
-          placeholder="Month (MM)"
+          placeholder="MM"
           required
           maxLength="2"
           pattern="[0-9]"
@@ -92,7 +92,7 @@ export const AgeVerification = ({ age }) => {
           max={minYear}
           id="bYear"
           name="bYear"
-          placeholder="Year (YYYY)"
+          placeholder="YYYY"
           required
           minLength="4"
           maxLength="4"

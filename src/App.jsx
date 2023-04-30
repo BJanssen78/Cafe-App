@@ -9,6 +9,7 @@ const greeting = "Welcome to our cafe";
 
 function App() {
   const [selectDrink, setSelectDrink] = useState();
+  const [selectedDrink, setSelectedDrink] = useState();
   const [userAge, setUserAge] = useState();
   const [userAgeMsg, setUserAgeMsg] = useState();
 
@@ -31,8 +32,9 @@ function App() {
 
   const orderDrink = (id) => {
     const orderedDrink = AvailableDrinks.filter((drink) => drink.id === id);
-    setSelectDrink(orderedDrink);
-    console.log("Your selected drink is " + selectDrink);
+    setSelectedDrink(orderedDrink);
+    console.log("Your selected drink is " + JSON.stringify(selectedDrink));
+    //extra state aanamken voor geklikte button
   };
 
   return (
